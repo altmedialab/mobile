@@ -43,7 +43,10 @@
         const username = document.querySelector('#username').value;
         const password = document.querySelector('#password').value;
 
-        if (username === 'user' && password === 'pass') {
+        if (username === '' && password === '') {
+            /*
+            username = user & password = pass 
+            */
             //ons.notification.alert('Correct!');
             // ons.notification.toast('Correct!');            
             //ons.notification.confirm('Correct!');
