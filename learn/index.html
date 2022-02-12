@@ -42,7 +42,8 @@
 
         if (username === 'user' && password === 'pass') {
             //ons.notification.alert('Correct!');
-            ons.notification.toast('Correct!');
+            // ons.notification.toast('Correct!');            
+            ons.notification.confirm('Correct!');
         } else {
             ons.notification.alert('Wrong username/password combination');
         }
