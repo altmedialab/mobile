@@ -12,10 +12,18 @@
 
 </head>
 <body>
+    
     <ons-splitter>
         <!-- The side menu -->
         <ons-splitter-side id="menu" collapse width="220px">
-        <ons-page></ons-page>
+        <ons-page>
+            <script>
+                const openMenu = () => {
+                  document.querySelector('#menu').open();
+                };
+            </script>
+
+        </ons-page>
         </ons-splitter-side>
     
         <!-- Everything not in the side menu -->
@@ -23,6 +31,6 @@
         <ons-navigator id="navigator" page="login.html"></ons-navigator>
         </ons-splitter-content>
     </ons-splitter>
-   
+ 
 </body>
 </html>
