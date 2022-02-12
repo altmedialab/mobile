@@ -41,7 +41,8 @@
         const password = document.querySelector('#password').value;
 
         if (username === 'user' && password === 'pass') {
-            ons.notification.alert('Correct!');
+            //ons.notification.alert('Correct!');
+            ons.notification.toast('Correct!');
         } else {
             ons.notification.alert('Wrong username/password combination');
         }
