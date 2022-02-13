@@ -20,9 +20,9 @@ var prev = function() {
   
     if (page.id === 'welcome') {
       page.querySelector('#registerBtn').onclick = function() {
-        document.querySelector('#welcome').pushPage('register.html', {data: {title: 'Page 2'}});
+        document.querySelector('#welcome').pushPage('register.html', {data: {title: 'Sign Up'}});
       };
-    } else if (page.id === 'register') {
+    } else if (page.id === 'userRegister') {
       page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
     }
   });
