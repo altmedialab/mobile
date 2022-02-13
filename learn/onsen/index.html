@@ -24,8 +24,15 @@
 
 </head>
 <body>
-    
-  <ons-page>
+  <ons-navigator 
+    swipeable
+    id="welcomePage"
+    page="index.html"
+  >
+  </ons-navigator>  
+
+  <template id="welcome.html">
+  <ons-page id="welcome">
     <ons-toolbar class="">
       <div class="left">
         <ons-toolbar-button onclick="prev()">
@@ -66,13 +73,23 @@
           <p class="welcome-icons-details-3 pt-3">
             You don't need to be at the farm to make change you wish. Do it anywhere.
           </p>
+
+
+          <ons-button class="registerBtn" modifier="cta" onclick="register()">Sign up</ons-button>  
         </div>
 
 
       </ons-carousel-item>
     </ons-carousel>
   </ons-page>
+  </template>
 
+  <template id="register">
+    <ons-page id="userRegister">
+      
+
+    </ons-page>
+  </template>
 
   <script src="js/index.js"></script>
 
