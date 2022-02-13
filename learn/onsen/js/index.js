@@ -15,6 +15,7 @@ var prev = function() {
   });
 
   /* welcome and registration pages */
+  /*  
   document.addEventListener('init', function(event) {
     var page = event.target;
   
@@ -26,3 +27,4 @@ var prev = function() {
       page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
     }
   });
+  */
