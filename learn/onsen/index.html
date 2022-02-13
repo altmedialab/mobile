@@ -75,7 +75,7 @@
           </p>
 
 
-          <ons-button class="registerBtn" modifier="cta" onclick="register()">Sign up</ons-button>  
+          <ons-button class="registerBtn" modifier="cta" id="registerBtn">Sign up</ons-button>  
         </div>
 
 
@@ -84,9 +84,20 @@
   </ons-page>
   </template>
 
-  <template id="register">
+  <template id="register.html">
     <ons-page id="userRegister">
       
+      <div style="text-align: center; margin-top: 30px;">
+        <p>
+          <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
+        </p>
+        <p>
+          <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+        </p>
+        <p style="margin-top: 30px;">
+          <ons-button modifier="large" onclick="signUp()">Register</ons-button>
+        </p>
+      </div>
 
     </ons-page>
   </template>

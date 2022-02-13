@@ -13,3 +13,16 @@ var prev = function() {
       console.log('Changed to ' + event.activeIndex)
     });
   });
+
+  /* welcome and registration pages */
+  document.addEventListener('init', function(event) {
+    var page = event.target;
+  
+    if (page.id === 'page1') {
+      page.querySelector('#registerBtn').onclick = function() {
+        document.querySelector('#welcome').pushPage('register.html', {data: {title: 'Page 2'}});
+      };
+    } else if (page.id === 'page2') {
+      page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
+    }
+  });
