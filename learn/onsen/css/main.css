@@ -6,4 +6,6 @@
 .registerBtn {
     background-color: #8cc63f;
     color : #ffffff;
+    margin-top: auto;
+    margin-bottom: 200px;
 }
