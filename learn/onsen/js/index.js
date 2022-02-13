@@ -18,11 +18,11 @@ var prev = function() {
   document.addEventListener('init', function(event) {
     var page = event.target;
   
-    if (page.id === 'page1') {
+    if (page.id === 'welcome') {
       page.querySelector('#registerBtn').onclick = function() {
         document.querySelector('#welcome').pushPage('register.html', {data: {title: 'Page 2'}});
       };
-    } else if (page.id === 'page2') {
+    } else if (page.id === 'register') {
       page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
     }
   });
