@@ -23,6 +23,7 @@
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
 
 </head>
+
 <body>
   <ons-navigator 
     swipeable
@@ -42,7 +43,9 @@
       <div class="align-middle center myl">Mayilatronic</div>
       <div class="right">
         <ons-toolbar-button onclick="next()">
-          <ons-icon icon="md-chevron-right"></ons-icon>
+          <ons-icon icon="md-chevron-right">
+            
+          </ons-icon>
         </ons-toolbar-button>
       </div>
     </ons-toolbar>
@@ -106,7 +109,7 @@
     </ons-page>
   </ons-template>
 
-  <script src="js/index.js"></script>
+  <!--script src="js/index.js"></script-->
 
   <script>
   /* welcome and registration pages */
@@ -121,6 +124,27 @@
       page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
     }
   });
+  </script>
+
+  <script>
+
+var prev = function() {
+    var carousel = document.getElementById('carousel');
+    carousel.prev();
+  };
+  
+  var next = function() {
+    var carousel = document.getElementById('carousel');
+    carousel.next();
+  };
+  
+  ons.ready(function() {
+    var carousel = document.addEventListener('postchange', function(event) {
+      console.log('Changed to ' + event.activeIndex)
+    });
+  });
+
+
   </script>
 
 
